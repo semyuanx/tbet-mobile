@@ -1,0 +1,474 @@
+body,html{
+    height: 100%;
+}
+body,#root{
+    background: #000000;
+    height: 100%;
+}
+/* 公用 */
+.m15 {
+    margin: 0 15px;
+}
+.p15{
+    padding: 0 15px;
+}
+/* 字体 */
+.tbet-icon{
+    fill: currentColor;
+    background-size: cover;   
+    color: #ffd08c;
+}
+.pop-main .tbet-icon{
+    color: #ffffff;
+}
+
+/* 侧边栏 */
+.drawer-item{
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0 0 0 40px;
+}
+.drawer-info.drawer-item{
+    height: 140px;
+    color: #ffd08c;
+    padding-left: 20px;
+}
+.drawerInfo-main{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.drawerInfo-main .drawerInfo-img{
+    flex: 0 0 80px;
+    height: 80px;
+    align-self: center;
+  
+}
+.drawerInfo-main img{
+    width: 100%;
+}
+.drawerInfo-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-left: 25px;
+}
+.drawerInfo-right i{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.8;
+    font-style: normal;
+    margin: 0;
+    display: block;
+    width: 140px;
+    background:url(../img/vip_name.png) no-repeat left top;
+    background-size: 100%;
+}
+.drawer-item .tbet-icon{
+    align-self: center;
+}
+.drawer-item a{
+    padding-left: 15px;
+    display: block;
+    flex: 1;
+    font-size: 30px;
+}
+.drawer-item a,.drawer-item .tbet-icon{
+    color: #ffd08c;
+}
+.my-drawer {
+    overflow: auto;
+    display: none;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  .my-drawer.am-drawer-open{
+    display: block;
+    z-index: 9999;
+  }
+  .my-drawer .am-drawer-sidebar {
+    background-color: #0f101f;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 350px;
+    
+  }
+  .closeDrawer{
+      margin:10px 20px;
+      color: #fff;
+      background-color: #f60;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1.5;
+      border-radius: 10px;
+  }
+
+/* 底部 */
+  .am-tab-bar-bar{
+      background: url(../img/bar_bgf.png) repeat-x top;
+      background-size:auto 100% ;
+  }
+  .am-tab-bar-bar .am-tab-bar-tab-title{
+      font-size: 24px;
+  }
+  /* 头部 */
+  header .am-navbar-title{
+    font-size: 34px;
+}
+header .am-navbar{
+    height: 80px; 
+    color: #ffd08c; 
+    background-color: #000000;
+}
+.am-navbar img{
+    height: 50px;
+}
+header .am-navbar-left-icon{
+    display: none;
+}
+header .am-navbar-left-content{
+    padding-left: 0;
+}
+header .am-navbar-left-content .am-icon-md{
+    width: 60px;
+    height: 60px;
+}
+  header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:101;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+ 
+  /* 页面主体 */
+ .container{
+     padding: 80px 0 100px;
+ }
+ /* 页面弹窗 */
+ .login-modal .am-modal-content{
+    height: 100%;
+    z-index: 999;
+    background:#05040b url(../img/login_bgf.jpg) no-repeat bottom left;
+    background-size:100%;
+ }
+.pop-container{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 70px 30px 70px 15px;;
+}
+.pop-head{
+    width: 320px;
+}
+.pop-head img{
+    width: 100%;
+}
+.pop-container h3{
+    flex: 1;
+    color: #fff000;
+    text-align: center;
+    font-size: 34px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: normal;
+}
+.pop-container h3.loginErr{
+    color: red;
+}
+.pop-main{
+    width: 100%;
+}
+.pop-main .icon-user{
+    font-size: 40px;
+}
+.pop-main span{
+    display: block;
+    color: #ffffff;
+    padding-left: 15px;
+    border-right: 2px solid #ffffff;
+    margin-right: 15px;
+}
+.loginInput,.loginCode-flex{
+    background-color: transparent !important;
+}
+.pop-main .am-list-item .am-input-control input{
+    /* font-size: 30px; */
+    color: #ffffff;
+}
+.login-code{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.login-code img{
+    display: block;
+    width: 100%;
+    flex: 0 0 150px;
+}
+.loginCode-flex{
+    flex: 1;
+}
+.login-fotget{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.login-fotget a{
+    color: #fff000;
+    padding: 10px;
+}
+.login-btn{
+    margin: 0 15px;
+}
+.login-btn img{
+    width: 100%;
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.login-goReg{
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin: 70px 0;
+}
+.closePop{
+    font-size: 60px;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+ /* 首页 */
+ .my-carousel img{
+     width: 100%;
+ }
+ .myNotice.am-notice-bar{
+    padding: 10px 0;
+    background-color: #0c0a12;
+    color: #ffd69b;
+ }
+ .myNotice .am-notice-bar-icon .am-icon-trips{
+    width: 50px;
+    height: 50px;
+    
+ }
+ .myNotice .am-notice-bar-content{
+    background-color: #110f17;
+ }
+.grid-list{
+    display: flex;
+    height: 240px;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+ .grid-item{
+     flex: 1;
+     text-align: center;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+ }
+ .grid-border{
+     width: 220px;
+     height: 220px;
+    border: 1px solid #ffd69b;
+    border-radius: 15px;
+}
+.grid-item img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+.grid-item h3{
+    color: #ffd69b;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 10px 0 0;
+}
+.hotGame-head h3{
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 32px;
+    margin: 0;
+    line-height: 80px;
+}
+.hotGame-head{
+    height: 80px;
+    padding: 0 15px;
+    background-color: #0c0a12;
+    display: flex;
+    justify-content: space-between;
+}
+.hotGame-head a{
+    line-height: 60px;
+    color: #ffd69b;
+    font-size: 28px;
+    align-self:  center;
+    padding: 10px;
+}
+.hotGame-main .am-grid .am-flexbox{
+    background-color: #000000;
+}
+.grid-game{
+    height: 100%;
+    display: flex;
+    flex: 1;
+}
+.gridGame-border{
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid #945a1e;
+    border-radius: 5px;
+}
+.gridGame-border img{
+    display: block;
+    margin: 15px auto;
+}
+.gridGame-title{
+    background-image: linear-gradient(to bottom,#ffe37c, #945a1e);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+}
+.gridGame-title span{
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+    padding-bottom: 3px;
+    display: block;
+}
+.gridGame-tip{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: #d70000;
+    line-height: 35px;
+    padding-top: 20px;
+    transform-origin: 40px 120px;
+    -webkit-transform-origin: 40px 120px;
+    font-style: normal;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.index-login-btn{
+    position: fixed;
+    bottom: 110px;
+    right: 15px;
+    width: 90px;
+    height: 90px;
+}
+/* 游戏中心 */
+.game-head{
+    width: 100%;
+}
+.game-head img,.game-list img{
+    display: block;
+    width: 100%;
+}
+.game-list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.game-list a{
+    flex: 1;
+    margin: 0 10px;
+}
+/* 最新公告 */
+.notice-list {
+    color: #ffffff;
+    display: flex;
+    margin-bottom: 20px;
+}
+.notice-tip{
+    flex: 0 0 30px;
+    text-align: center;
+    line-height: 50px;
+}
+.notice-title{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    line-height: 50px;
+}
+.notice-title h3{
+    color: #cc3333;
+    font-size: 28px;
+    margin: 0
+}
+.notice-title p{
+    margin: 0;
+    font-size: 28px;
+    color: #ff9900;
+}
+.notice-txt{
+    font-size: 28px;
+    line-height: 1.7;
+}
+/*  立即存款  */
+.myTabs .am-tabs-bar .am-tabs-tab{
+    background-color: #000000;
+    color: #fea100;
+}
+.myTabs .am-tabs-bar .am-tabs-nextpage:after{
+    background: -webkit-gradient(linear, left top, right top, from(rgba(254,254,254, 0)), to(#000000));
+    background: -webkit-linear-gradient(left, rgba(254,254,254, 0), #000000);
+    background: linear-gradient(to right, rgba(254,254,254, 0.00), #000000);
+}
+.myTabs .am-tabs-bar .am-tabs-prevpage:before{
+    background: -webkit-gradient(linear, left top, right top, from(#000000), to(rgba(254,254,254, 0)));
+    background: -webkit-linear-gradient(left, #000000, rgba(254,254,254, 0));
+    background: linear-gradient(to right, #000000, rgba(254,254,254, 0));
+}
+.myTabs .am-tabs-ink-bar{
+    background-color: #fea100;
+}
+.hanldpay-container{
+
+}
+.pay-title{
+    background-color: #090710;
+    display: flex;
+    line-height: 1.8;
+}
+.pay-title .tbet-icon{
+    margin-top: 5px;
+}
+.pay-title h3{
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal;
+    font-size: 30px;
+    margin-left: 15px;
+}
+.my-radio{
+    color: #ffffff;
+}
+.my-radio .am-radio {
+    padding: 0.05rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 0.1rem;
+  }
+  .pay-txt{
+      color: #7b7884;
+      font-size: 28px;
+      line-height: 1.8;
+      margin: 0;
+  }
